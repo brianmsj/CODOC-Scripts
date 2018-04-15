@@ -1,5 +1,5 @@
 gs.include("PrototypeServer");
-
+//Prototype Server
 var MultiSSO_DigestedToken_Colorado_DOC = Class.create();
 MultiSSO_DigestedToken_Colorado_DOC.prototype = Object.extend(new MultiSSO_Abstract_Core(), {
 
