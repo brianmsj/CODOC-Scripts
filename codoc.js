@@ -169,3 +169,21 @@ MultiSSO_DigestedToken_Colorado_DOC.prototype = Object.extend(new MultiSSO_Abstr
 		return portalURL;
 	}
 });
+
+
+
+//script to add accounts to the inmates
+var contact = new GlideRecord('customer_contact');
+contact.query();
+while(contact.next()) {
+  var account = new GlideRecord('customer_account');
+  account.query();
+  while(account.next()) {
+     var abbreviation = contact.u_loclevel_2'
+     var accountName = account.name
+     if(accountName.substring(abbreviation) !== -1) {
+        contact.account = account.sys_id;
+        contact.update()
+     }
+ } 
+}   
